@@ -6,6 +6,8 @@ def run():
         print buildUsage()
     elif len(sys.argv) == 1:
         print buildChars()
+    elif (sys.argv[1] == '-h') or (sys.argv[1]=='--help'):
+        print buildUsage()
     elif len(sys.argv) == 2:
         print "Not yet implemented, sorry!"
 
